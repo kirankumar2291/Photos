@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionReusableView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ALBUMSTITLE" id="L9c-Qc-4DB" customClass="AlbumsCollectionReusableView" customModule="Photos" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cNG-Am-1RR">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="80"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Albums" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K3w-am-Ubi">
+                            <rect key="frame" x="10" y="0.0" width="365" height="80"/>
+                            <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="30"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="trailing" secondItem="K3w-am-Ubi" secondAttribute="trailing" id="Aj1-rj-quA"/>
+                        <constraint firstItem="K3w-am-Ubi" firstAttribute="leading" secondItem="cNG-Am-1RR" secondAttribute="leading" constant="10" id="Ij6-hr-Eoi"/>
+                        <constraint firstAttribute="bottom" secondItem="K3w-am-Ubi" secondAttribute="bottom" id="TtH-5L-aWw"/>
+                        <constraint firstItem="K3w-am-Ubi" firstAttribute="top" secondItem="cNG-Am-1RR" secondAttribute="top" id="ax8-l9-UpK"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="cNG-Am-1RR" firstAttribute="top" secondItem="L9c-Qc-4DB" secondAttribute="top" id="5e7-9R-Z2d"/>
+                <constraint firstItem="wwj-Vy-GOu" firstAttribute="trailing" secondItem="cNG-Am-1RR" secondAttribute="trailing" id="UE6-Ub-ULC"/>
+                <constraint firstAttribute="bottom" secondItem="cNG-Am-1RR" secondAttribute="bottom" id="knk-eb-GDg"/>
+                <constraint firstItem="cNG-Am-1RR" firstAttribute="leading" secondItem="wwj-Vy-GOu" secondAttribute="leading" id="yrE-bY-DF7"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="wwj-Vy-GOu"/>
+            <point key="canvasLocation" x="-63" y="43"/>
+        </collectionReusableView>
+    </objects>
+</document>
